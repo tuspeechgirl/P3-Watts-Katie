@@ -38,6 +38,13 @@ grid-template-rows: 200px 200px;
 
 }
 
+.white{
+	background-image: url('img/gift.png');
+	background-size: cover;
+	background-position: center;
+	transition: background-color 1000ms;
+}
+
 .box {
  background-color: #444;
  color: #fff;
@@ -46,11 +53,13 @@ grid-template-rows: 200px 200px;
  padding: 20px;
  font-size: 150%;
  text-align: center;
+ transition: background-color 1000ms;
 
 }
 h2{
 	 	 font-size: 4rem !important;
 		 padding-top: 15%;
+		 height:150px;
 }
 #red{
 	background: #ff0000;
