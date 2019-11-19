@@ -1,0 +1,68 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+body{
+
+ margin: 40px;
+ height:1000px;
+  background: url("img/santa.jpg") no-repeat;
+	background-size: 100%;
+	font-family: 'Mountains of Christmas', cursive !important;
+}
+h1{
+	font-family: 'Mountains of Christmas', cursive !important;
+	color: white;
+	font-size: 4rem !important;
+	margin: 3% 3% 0 3% !important;
+}
+.badge {
+	background:  #ff0000 !important;
+}
+.badge-2{
+	background: #74d680 !important;
+}
+.wrapper {
+	margin-top: 100px;
+ display: grid;
+ grid-template-columns: 200px 200px;
+ grid-gap: 10px;
+grid-template-rows: 200px 200px;
+ color: #444;
+ padding-left: 12%;
+
+}
+
+.box {
+ background-color: #444;
+ color: #fff;
+ border-radius: 5px;
+ border: solid 2px grey;
+ padding: 20px;
+ font-size: 150%;
+ text-align: center;
+
+}
+h2{
+	 	 font-size: 4rem !important;
+		 padding-top: 15%;
+}
+#red{
+	background: #ff0000;
+
+}
+#pink{
+	background: #ff7878;
+}
+#white{
+	background: #fff;
+	color: black;
+}
+#green{
+	background: #74d680;
+}
