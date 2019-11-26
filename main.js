@@ -1,11 +1,13 @@
 //Global Varibales
-const firstLayer = document.getElementById('layer-one');
-const fortuneColor = document.getElementsByClassName('color-name');
-const myLayerTwo = document.getElementsByClassName('number-name');
-const secondLayer = document.getElementById('layer-two');
+const firstLayer = document.getElementById('color-round-one');
+const secondColorLayer = document.getElementById('color-round-two');
+const fortuneColorRoundOne = document.getElementsByClassName('color-name');
+const fortuneNumberRoundThree = document.getElementsByClassName('number-name');
+const thirdLayer = document.getElementById('number-layer-three');
+const fortuneColorRoundTwo = document.getElementsByClassName('color-name-2');
 
 
-//The Functionality
+//The Functionality for color
 function loopThrough(){
   const changeColor = ()=>{
     this.classList.toggle('white');
@@ -14,35 +16,40 @@ function loopThrough(){
     setTimeout(changeColor, i * 1000);
   }
 };
-
-
+//hides layer 1 switches to layer 2
 function changeLayer(){
   const swap = ()=>{
     firstLayer.classList.add('wrapper-hide');
-    secondLayer.classList.remove('wrapper-hide');
+    secondColorLayer.classList.remove('wrapper-hide-color');
+
+
 }
+
 setTimeout(swap, this.textContent.length * 2 * 1000);
 };
 
 
-for (let i = 0; i < fortuneColor.length; i++){
-  fortuneColor[i].addEventListener('click', loopThrough);
-  fortuneColor[i].addEventListener('click', changeLayer);
-};
-for (let i = 0; i < fortuneColor.length; i++){
-  myLayerTwo[i].addEventListener('click', loopThrough);
-  myLayerTwo[i].addEventListener('click', changeLayer);
+//run these
+for (let i = 0; i < fortuneColorRoundOne.length; i++){
+  fortuneColorRoundOne[i].addEventListener('click', loopThrough);
+  fortuneColorRoundOne[i].addEventListener('click', changeLayer);
 };
 
 
 
-var fortuneList=[
-  "You are on the super Naughty List",
-  "You are getting nothing but coal",
-  "You are getting nothing for Xmas",
-  "You have been super Nice",
-  "You are getting all the items on your list",
-  "Santa forgot what you want",
-  "You are on the Nice List",
-  "Rudolph told Santa your the BEST!"
-]
+
+
+//Swith layers and run again//
+function changeLayer2(){
+  const swapTwo = ()=>{
+    secondColorLayer.classList.add('wrapper-hide-color');
+    thirdLayer.classList.remove('wrapper-hide-number');
+}
+
+setTimeout(swapTwo, this.textContent.length * 2 * 1000);
+};
+
+for (let i = 0; i < fortuneColorRoundTwo.length; i++){
+  fortuneColorRoundTwo[i].addEventListener('click', loopThrough);
+  fortuneColorRoundTwo[i].addEventListener('click', changeLayer2);
+};
