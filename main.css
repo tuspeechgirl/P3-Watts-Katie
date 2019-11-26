@@ -54,7 +54,7 @@ h2{
 	display: none;
 }
 .wrapper-hide-number{
-	display: grid;
+	display:none;
 }
 .wrapper-hide{
 	display: none;

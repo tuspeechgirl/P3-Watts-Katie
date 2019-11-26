@@ -43,10 +43,16 @@ for (let i = 0; i < fortuneColorRoundOne.length; i++){
 function changeLayer2(){
   const swapTwo = ()=>{
     secondColorLayer.classList.add('wrapper-hide-color');
-    thirdLayer.classList.remove('wrapper-hide-number');
+    thirdLayer.classList.add('wrapper-hide-number');
+    thirdLayer.classList.add("grid-numbers");
 }
 
 setTimeout(swapTwo, this.textContent.length * 2 * 1000);
+};
+
+for (let i = 0; i < fortuneColorRoundTwo.length; i++){
+  fortuneColorRoundTwo[i].addEventListener('click', loopThrough);
+  fortuneColorRoundTwo[i].addEventListener('click', changeLayer);
 };
 
 for (let i = 0; i < fortuneColorRoundTwo.length; i++){
